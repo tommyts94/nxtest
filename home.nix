@@ -4,6 +4,14 @@
 	home.username = "thomas";
 	home.homeDirectory = "/home/thomas";
 
+	home.packages = [
+   	pkgs.htop
+    	pkgs.kitty
+	pkgs.wofi
+	firefox
+	ranger
+	micro
+  ];
 	programs.bash = {
 		enable = true;
 		enableCompletion = true;
