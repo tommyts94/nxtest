@@ -13,7 +13,7 @@
 
 outputs = inputs@{ nixpkgs, chaotic, hyprland, ...}: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-       specialArgs = { inherit inputs hyprland; };
+       specialArgs = { inherit inputs; };
        modules = [
         /etc/nixos/configuration.nix
          hyprland.nixosModules.default
