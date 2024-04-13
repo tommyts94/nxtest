@@ -8,23 +8,19 @@ programs.hyprland = {
   };
   
   environment.systemPackages = with pkgs; [
-     spotify
-     google-drive-ocamlfuse
      atool
      neovim
+     ranger
      unzip
      qemu
      virt-manager
      virglrenderer
      gvfs
-     pkgs.pcsx2
      python311
-     python311Packages.ds4drv
      python311Packages.pynvim
      inputs.nix-software-center.packages.${system}.nix-software-center
      brave
      wofi
-     linuxKernel.packages.linux_6_5.virtualbox
      wl-clipboard
      alacritty
      rofi-wayland
@@ -39,10 +35,8 @@ programs.hyprland = {
      hyprpaper
      pkgs.distrobox 
      pkgs.polkit_gnome
-     swayidle
-     swaylock-effects
-     swaynotificationcenter
-     pkgs.swayosd
+     hypridle
+     hyprlock
      pkgs.libsForQt5.qt5ct
      heroic
      pkgs.libsForQt5.qt5.qtwayland
@@ -60,7 +54,6 @@ programs.hyprland = {
      pkgs.qbittorrent
      pkgs.libsForQt5.qtstyleplugin-kvantum
      pkgs.qt6Packages.qtstyleplugin-kvantum
-    vscode-fhs
     mako
     discord
      ];
