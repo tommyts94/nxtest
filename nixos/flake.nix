@@ -11,7 +11,7 @@
    };
 
 
-outputs = { self, nixpkgs, chaotic, hyprland, ...}@inputs: {
+outputs = inputs@{ nixpkgs, chaotic, hyprland, ...}: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
        specialArgs = { inherit inputs hyprland; };
        modules = [
@@ -23,9 +23,6 @@ outputs = { self, nixpkgs, chaotic, hyprland, ...}@inputs: {
     };
   };
 
-  nixConfig = {
-    extra-substituters = ["https://hyprland.cachix.org"];
-    extra-trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
+
 }
 
