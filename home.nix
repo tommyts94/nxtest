@@ -8,9 +8,9 @@
    	pkgs.htop
     	pkgs.kitty
 	pkgs.wofi
-	firefox
-	ranger
-	micro
+	pkgs.firefox
+	pkgs.ranger
+	pkgs.micro
   ];
 	programs.bash = {
 		enable = true;
