@@ -28,10 +28,10 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  programs.hyprland = {
-	enable = true;
-	package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  };
+  # programs.hyprland = {
+  #	enable = true;
+  #	package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+   #};
   # Set your time zone.
   time.timeZone = "Europe/Athens";
 
